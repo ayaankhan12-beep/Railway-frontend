@@ -28,7 +28,7 @@ export default  function Signup() {
         setloader(true)
 
         try {
-            const res = await axios.post("https://railway-backend-production-a56b.up.railway.app/api/Auth/signUp" ,
+            const res = await axios.post("https://railway-backend-production-9329.up.railway.app/signUp" ,
                 {username , email , password},
                 {withCredentials: true}
             )
@@ -50,7 +50,7 @@ export default  function Signup() {
             
 
         } catch (error) {
-            message.error("signUp failed")
+            message.error("signup failed")
         }
         finally {
             setloader(false)
