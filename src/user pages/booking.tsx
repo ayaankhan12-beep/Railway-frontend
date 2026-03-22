@@ -29,7 +29,7 @@ export default function Booking() {
       formData.append("image", image);
 
       const res = await axios.post(
-        `https://railway-backend-production-a56b.up.railway.app/api/booking/${trainId}`,
+        `https://railway-backend-production-9329.up.railway.app/booking/${trainId}`,
         formData,
         {
           headers: {

@@ -45,7 +45,7 @@ export default function Verifyotp () {
     
     const resend = async () => {
     try{
-      const res = await axios.post(`https://railway-backend-production-a56b.up.railway.app/api/Auth/resend/${userId}` , 
+      const res = await axios.post(`https://railway-backend-production-9329.up.railway.app/resend/${userId}` , 
             {},
             
                 

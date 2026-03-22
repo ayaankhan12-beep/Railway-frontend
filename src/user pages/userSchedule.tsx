@@ -20,7 +20,7 @@ export default function Userschedule() {
     
 try {
 
-    const res = await axios.get("https://railway-backend-production-a56b.up.railway.app/api/getTrain")
+    const res = await axios.get("https://railway-backend-production-9329.up.railway.app/getTrain")
     
     setUser(res.data.data)
     setloading(false)

@@ -16,7 +16,7 @@ const [auth , setAuth] = useState<boolean | null>(null);
   useEffect(() => {
     const checkAuth =  async() => {
       try {
-        const res = await axios.get("https://railway-backend-production-a56b.up.railway.app/api/Auth/checkAuth" ,
+        const res = await axios.get("https://railway-backend-production-9329.up.railway.app/checkAuth" ,
       {withCredentials: true}
     );
    setAuth (res.data.isAuthenticated) 
